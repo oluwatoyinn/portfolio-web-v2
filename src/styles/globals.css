@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,11 +18,20 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  color: #ffffff;
+  background: black;
+  font-family: 'Rubik', sans-serif;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+@layer components {
+  .nav-items {
+    @apply hover:text-blue-600 hover:border-b-2 hover:border-blue-600 text-xl cursor-pointer;
+    /* @apply before:w-full before:h-80 before:bg-red-400 before:left-0 before:-bottom-5 before:rounded-b-lg */
+  }
 }
