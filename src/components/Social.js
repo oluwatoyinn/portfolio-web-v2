@@ -9,10 +9,7 @@ const Social = () => {
           <CodeBracket />
         </div>
         <div className="container flex flex-col-reverse items-center px-6 justify-between mx-auto space-y-0 md:flex-row md:space-y-0 md:px-28">
-          <div className="flex flex-col space-y-12 mt-10  ">
-            {/* <p className="max-w-sm text-center text-gray-500 md:text-left">
-              We are
-            </p> */}
+          <div className="flex flex-col space-y-12 mt-10">
             <p className=" text-center md:text-5xl md:text-left dark:text-gray-500">
               Hey there, I am{" "}
               <span className="text-blue-600 font-bold"> Victor Ajayi.</span>
@@ -21,7 +18,7 @@ const Social = () => {
               A Software Frontend Developer
             </p>
             <div className="flex">
-              <a>
+              <a href="https://github.com/oluwatoyinn">
                 <Image
                   src="/icons8-github.svg"
                   alt="Img Logo"
@@ -31,15 +28,17 @@ const Social = () => {
                   priority
                 />
               </a>
-
-              <Image
-                src="/icons8-linkedin.svg"
-                alt="Img Logo"
-                className="dark:invert"
-                width={50}
-                height={10}
-                priority
-              />
+              <a href="https://www.linkedin.com/in/ajayioluwatoyin/">
+                <Image
+                  src="/icons8-linkedin.svg"
+                  alt="Img Logo"
+                  className="dark:invert"
+                  width={50}
+                  height={10}
+                  priority
+                />
+              </a>
+              
               <Image
                 src="/icons8-whatsapp.svg"
                 alt="Img Logo"

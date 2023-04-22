@@ -4,6 +4,7 @@ import HarmburgerIcon from "./icons/Harmburger";
 import Image from "next/image";
 
 const NavBar = () => {
+
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -16,7 +17,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <nav className="relative container mx-auto md:px-28 pt-10">
+      <nav className="relative container mx-auto md:px-20 pt-10">
         <div className="flex items-center justify-between">
           <div className="pt-2 cursor-pointer">
             <Image
@@ -29,7 +30,7 @@ const NavBar = () => {
             />
           </div>
           {/* Menu Items */}
-          <div className="md:flex space-x-16 hidden  ">
+          <div className="md:flex space-x-16 hidden">
             <a href="#" className="nav-items">
               About
             </a>
@@ -44,17 +45,18 @@ const NavBar = () => {
             </a>
           </div>
           {/* <div>
-            <ToggleMode />
+            <ToggleMode /> 
           </div> */}
           <a
-            href="#"
+            href="AJAYI OLUWATOYIN VICTOR....pdf"
+            // download
+            target="_blank"
             className=" hidden md:block p-3 px-6 pt-2 text-white rounded-md hover:bg-white hover:text-black bg-blue-600"
           >
             Resume
           </a>
 
           {/* Mobile Header */}
-
           <button
             id="menu-btn"
             onClick={handleOpen}
