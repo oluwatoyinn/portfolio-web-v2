@@ -35,3 +35,41 @@ body {
     /* @apply before:w-full before:h-80 before:bg-red-400 before:left-0 before:-bottom-5 before:rounded-b-lg */
   }
 }
+
+/* typing effect */
+.typing-effect {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.animate-typing {
+  animation: typing 1s steps(12), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  display: inline-block;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+.cursor-blink::after {
+  content: '|';
+  animation: blink-caret 0.75s step-end infinite;
+}

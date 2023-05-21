@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import 'leaflet/dist/leaflet.css';
 import { ThemeProvider } from "@/components/DarkMode/themeContext";
 import { ParallaxProvider } from "react-scroll-parallax";
 
