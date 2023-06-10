@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CodeBracket from "@/components/icons/CodeBracket";
+import Typed from "react-typed";
 
 const Social = () => {
   return (
@@ -13,8 +14,16 @@ const Social = () => {
             <p className=" text-center md:text-5xl text-2xl md:text-left dark:text-gray-500">
               Hey there, I am{" "}
               <span className="text-blue-600 font-bold"> Victor Ajayi.</span> <br/>
-             <span className="md:text-5xl text-2xl"> A Software Frontend Developer </span>
-            </p> 
+              <Typed
+                strings={["A Software Frontend Engineer", 'I love software development']}
+                typeSpeed={120}  
+                loop
+              />
+              {/* <span className="md:text-5xl text-2xl">
+                {" "}
+                A Software Frontend Engineer{" "}
+              </span> */}
+            </p>
             <div className="flex">
               <a href="https://github.com/oluwatoyinn">
                 <Image
@@ -36,7 +45,7 @@ const Social = () => {
                   priority
                 />
               </a>
-              
+
               <Image
                 src="/icons8-whatsapp.svg"
                 alt="Img Logo"
