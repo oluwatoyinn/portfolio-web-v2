@@ -54,7 +54,7 @@ const Projects = () => {
               className="skill-set px-12 w-screen h-full bg-transparent flex items-center"
             >
               <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm bg-blue-200 p-10">
-                <a href="https://github.com/oluwatoyinn">
+                <a href={project.link}>
                   <Image
                     src="/icons8-github.svg"
                     alt="Img Logo"
