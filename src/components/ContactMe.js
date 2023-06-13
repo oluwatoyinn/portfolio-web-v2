@@ -103,7 +103,7 @@ const ContactMe = () => {
               </form>
             </div>
           </div>
-          <div className="md:w-1/2 pb-4/3 md:ml-10 ">
+          <div className="md:w-1/2 pb-4/3 md:ml-10 mt-10 md:mt-0">
             <Iframe />
           </div>
         </div>

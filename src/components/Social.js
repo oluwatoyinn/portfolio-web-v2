@@ -47,7 +47,7 @@ const Social = () => {
               </a>
 
               <Image
-                src="/icons8-whatsapp.svg"
+                src="/icons8-twitter.svg"
                 alt="Img Logo"
                 className="dark:invert"
                 width={50}
