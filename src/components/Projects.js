@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
-import { projectData } from './../utils/Data';
+import { projectData } from "./../utils/Data";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,7 +25,7 @@ const Projects = () => {
         invalidateOnRefresh: true,
         anticipatePin: 1,
         snap: 1,
-        
+
         end: () => "+=" + window.innerWidth,
       },
     });
@@ -37,47 +37,53 @@ const Projects = () => {
 
   return (
     <>
-    <section id="project">
-      <h2 className="text-blue-600 text-4xl text-center">
-        Some available projects online
-      </h2>
-      <div className="overflow-hidden flex">
-        <div
-          id="skills"
-          ref={scroller}
-          className="flex w-screen m-0 relative h-screen"
-        >
-          {projectData.map((project, index) => (
-            <div
-              key={index}
-              ref={skills}
-              className="skill-set px-12 w-screen h-full bg-transparent flex items-center"
-            >
-              <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm bg-blue-200 p-10">
-                <a href={project.link}>
-                  <Image
-                    src="/icons8-github.svg"
-                    alt="Img Logo"
-                    className="dark:invert"
-                    width={50}
-                    height={10}
-                    priority
-                  />
-                </a>
-                <p className="text-black text-justify">{project.description}</p>
+      <section id="project">
+        <h2 className="text-blue-600 text-4xl text-center">
+          Some available projects online
+        </h2>
+        <div className="overflow-hidden flex">
+          <div
+            id="skills"
+            ref={scroller}
+            className="flex m-0 relative h-screen"
+          >
+            {projectData.map((project, index) => (
+              <div
+                key={index}
+                ref={skills}
+                className="skill-set px-2 sm:px-12 w-screen sm:w-full h-full bg-transparent flex items-center"
+              >
+                <div className="mt-10 mx-auto sm:w-full sm:max-w-sm bg-blue-200 p-10">
+                  <div className="flex justify-between">
+                    <a href={project.link}>
+                      <Image
+                        src="/icons8-github.svg"
+                        alt="Img Logo"
+                        className="dark:invert"
+                        width={50}
+                        height={10}
+                        priority
+                      />
+                    </a>
+                    <span className="mt-2 mb-2 p-2 bg-blue-400 rounded-md">
+                      {project.label}
+                    </span>
+                  </div>
+                  <p className="text-black text-justify">
+                    {project.description}
+                  </p>
 
-                <h3 className="text-black text-justify font-bold mt-5">
-                  {project.skills}
-                </h3>
+                  <h3 className="text-black text-justify font-bold mt-5">
+                    {project.skills}
+                  </h3>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };
-
 
 export default Projects;
