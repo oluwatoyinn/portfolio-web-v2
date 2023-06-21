@@ -11,7 +11,7 @@ export const projectData = [
     link: "https://github.com/oluwatoyinn/portfolio-web-v2",
     description:
       "This is the version 2 of my Portfolio website that showcase projects I have worked on and I am building at the moment",
-    skills: " NextJs Tailwind Javascript CSS Hooks",
+    skills: " NextJs Javascript CSS Tailwind",
     label:"Port. Web. V2"
   },
   {

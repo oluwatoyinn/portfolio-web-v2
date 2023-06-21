@@ -45,15 +45,16 @@ const Social = () => {
                   priority
                 />
               </a>
-
-              <Image
-                src="/icons8-twitter.svg"
-                alt="Img Logo"
-                className="dark:invert"
-                width={50}
-                height={10}
-                priority
-              />
+              <a href="https://twitter.com/ovaTechs">
+                <Image
+                  src="/icons8-twitter.svg"
+                  alt="Img Logo"
+                  className="dark:invert"
+                  width={50}
+                  height={10}
+                  priority
+                />
+              </a>
             </div>
           </div>
           <div className="">
