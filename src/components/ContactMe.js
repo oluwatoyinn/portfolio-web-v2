@@ -13,7 +13,7 @@ const ContactMe = () => {
                   Contact Me
                 </h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
-                  Need help with a project?. You can reach out to me here
+                  Need help with a project?. You can find me here 
                 </p>
               </div>
               <form

@@ -17,7 +17,7 @@ export const projectData = [
   {
     link: "https://ovateknokleen.netlify.app/login",
     description:
-      "A simple content managment system (CMS) to manage all client details, full CRUD implementation and auth.",
+      "A simple content managment system (CMS) to manage for company staffs and client details management, ",
     skills: " React Javascript Formik CSS",
     label:"CMS"
   },
